@@ -56,6 +56,14 @@ const totalWeightsMarvelComics = superheroes
   })
   .reduce(reducer);
 
+const highestWeightHeroes = superheroes.map((superhero) => {
+  const heroWeight = parseInt(superhero.weight);
+  if (isNaN(heroWeight)) {
+    return 0;
+  }
+  return heroWeight;
+});
+
 console.log(heroNames); //1
 console.log('~~~~');
 console.log(heroesWeightsLessThan190); //2
@@ -72,3 +80,4 @@ console.log(totalWeightsDcComics); //6
 console.log('~~~~');
 console.log(totalWeightsMarvelComics); //7
 console.log('~~~~');
+console.log(Math.max.apply(null, highestWeightHeroes));
