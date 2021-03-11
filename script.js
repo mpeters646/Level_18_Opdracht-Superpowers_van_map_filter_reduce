@@ -64,6 +64,8 @@ const highestWeightHeroes = superheroes.map((superhero) => {
   return heroWeight;
 });
 
+const heavyestWeight = Math.max.apply(null, highestWeightHeroes);
+
 console.log(heroNames); //1
 console.log('~~~~');
 console.log(heroesWeightsLessThan190); //2
@@ -80,4 +82,5 @@ console.log(totalWeightsDcComics); //6
 console.log('~~~~');
 console.log(totalWeightsMarvelComics); //7
 console.log('~~~~');
-console.log(Math.max.apply(null, highestWeightHeroes));
+console.log(heavyestWeight);
+// console.log(Math.max.apply(null, highestWeightHeroes));
