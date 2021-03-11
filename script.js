@@ -82,5 +82,5 @@ console.log(totalWeightsDcComics); //6
 console.log('~~~~');
 console.log(totalWeightsMarvelComics); //7
 console.log('~~~~');
-console.log(heavyestWeight);
+console.log(heavyestWeight); //8
 // console.log(Math.max.apply(null, highestWeightHeroes));
